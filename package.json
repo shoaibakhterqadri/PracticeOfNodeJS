@@ -1,0 +1,13 @@
+{
+  "name": "nodebystrpbystep",
+  "version": "1.0.0",
+  "description": "shoaib",
+  "main": "index.js",
+  "scripts": {},
+  "author": "shoaibakhter",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "simple-node-logger": "^21.8.12"
+  }
+}
