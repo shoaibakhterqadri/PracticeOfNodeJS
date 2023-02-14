@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "shoaib",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    
+  },
   "author": "shoaibakhter",
   "license": "ISC",
   "dependencies": {

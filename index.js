@@ -30,6 +30,25 @@
 // 4 Step (All About package.json)
 
 // npm init // install package init means initialize
-const colors=require('colors');
+// const colors=require('colors');
 // console.log("shoaib".green)
 
+
+// 5 step (Install Nodemon)
+// npm i nodemon -g
+// node ./index.js
+
+// console.log(5+1)
+
+
+
+// 6 step (Simple API)
+const http=require('http');
+const data=require('./data')
+
+http.createServer((req,res)=>{
+res.writeHead(200,{'Content-Type':'application/json'});
+res.write(JSON.stringify(data));
+res.end();
+
+}).listen(3000);
