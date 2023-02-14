@@ -31,5 +31,5 @@
 
 // npm init // install package init means initialize
 const colors=require('colors');
-console.log("shoaib".green)
+// console.log("shoaib".green)
 
