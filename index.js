@@ -43,12 +43,57 @@
 
 
 // 6 step (Simple API)
-const http=require('http');
-const data=require('./data')
+// const http=require('http');
+// const data=require('./data')
 
-http.createServer((req,res)=>{
-res.writeHead(200,{'Content-Type':'application/json'});
-res.write(JSON.stringify(data));
-res.end();
+// http.createServer((req,res)=>{
+// res.writeHead(200,{'Content-Type':'application/json'});
+// res.write(JSON.stringify(data));
+// res.end();
 
-}).listen(3000);
+// }).listen(3000);
+
+
+// 7 step (input from command line)
+
+
+// console.log(process.argv[2])
+
+// const fs=require('fs');
+// const input=process.argv;
+
+// fs.writeFileSync(input[2],input[3])
+
+// if(input[2]=='add'){
+//       fs.writeFileSync(input[3],input[4]);
+// }
+// else if(input[2]=='remove'){
+//       fs.unlinkSync(input[3]);
+// }
+// else{
+//       console.log("Invalid Input")
+// }
+
+// 8 step CRUD with file System
+
+// const fs=require('fs');
+// const path=require('path');
+// const dirPath=path.join(__dirname,'crud');
+// const filePath=`${dirPath}/apple.txt`
+
+// fs.writeFileSync(filePath,'This is a simple text file')
+// fs.readFile(filePath,'utf-8',(err,item)=>{
+//       console.log(item)
+// })
+
+// for updation
+// fs.appendFile(filePath,'I am adding this because of updation',(err)=>{
+//       if(!err) console.log('file is updated')
+// })
+
+// // File name change
+// fs.rename(filePath,`${dirPath}/fruit.txt`,(err)=>{
+//       if(!err) console.log('File name is updated')
+// })
+
+// fs.unlinkSync(`${dirPath}/fruit.txt`)
