@@ -97,3 +97,159 @@
 // })
 
 // fs.unlinkSync(`${dirPath}/fruit.txt`)
+
+
+
+// 9 step Asynchoronous Basic in Node.js
+
+// console.log('start exe...');
+
+// setTimeout(()=>{
+//       console.log("logic exe...");
+
+// },2000)
+
+// console.log('complete exe...');
+
+
+// 10 step Handle Asynchoronous Data 
+
+// let a=10;
+// let b=10;
+
+
+// let waitingData=new Promise((resolve,reject)=>{
+//       setTimeout(()=>{
+//             resolve(60)
+//       },2000)
+// })
+
+// waitingData.then((data)=>{
+// b=data;
+// console.log(a+b);
+// })
+
+
+// console.log(a+b)
+
+
+// Express JS Start (Render HTML and JSON)
+
+// const express=require('express');
+// const app=express();
+
+// app.get('',(req,res)=>{
+// res.send(`
+// <h1>Hello, this is homepage</h1>
+// <a href='/about'>go to about</a>
+// `)
+// })
+
+// app.get('/about',(req,res)=>{
+// res.send(`<input type="text" placeholder='Enter your name'/>
+// ${req.query.name}
+// `)
+      
+// })
+
+// app.get('/blog',(req,res)=>{
+//       res.send({
+//             name:'shoaib',
+//             email:'shoaib@gmail.com'
+//       }) 
+//       })
+
+// app.listen(3000);
+
+
+
+// Make HTML Pages
+
+
+// const express=require('express');
+// const path=require('path')
+
+// const app=express();
+// const publicPath=path.join(__dirname,'public')
+
+// app.use(express.static(publicPath))
+
+// app.listen(3000);
+
+
+// URL Pages
+
+// const express=require('express');
+// const path=require('path')
+
+// const app=express();
+// const publicPath=path.join(__dirname,'public')
+
+// app.get('',(req,res)=>{
+// res.sendFile(`${publicPath}/about.html`)
+// })
+
+// app.get('/health',(req,res)=>{
+//       res.sendFile(`${publicPath}/health.html`)
+//       })
+
+//       app.get('*',(req,res)=>{
+//             res.sendFile(`${publicPath}/noPage.html`)
+//             })
+
+// app.listen(3000);
+
+
+
+// ****************************************************
+// Most Important for blogging
+// Template Engine
+
+
+// const express=require('express');
+// const path=require('path')
+
+// const app=express();
+// const publicPath=path.join(__dirname,'public')
+
+// app.set('view engine','ejs');
+
+// app.get('',(req,res)=>{
+// res.sendFile(`${publicPath}/about.html`)
+// })
+
+// app.get('/profile',(req,res)=>{
+//       const user={
+//             name:'Shoaib Akhter',
+//             age:15,
+//             city:'Karachi',
+//             skills:['php','node','js','html']
+//       }
+//    res.render('profile',{user});
+
+//       })
+
+//       app.get('/login',(req,res)=>{
+//             res.render('login')
+//       })
+
+// app.get('/health',(req,res)=>{
+//       res.sendFile(`${publicPath}/health.html`)
+//       })
+
+//       app.get('*',(req,res)=>{
+//             res.sendFile(`${publicPath}/noPage.html`)
+//             })
+
+// app.listen(3000);
+
+
+// Dynamic Page
+
+
+
+
+
+
+
+
